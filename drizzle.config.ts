@@ -12,7 +12,7 @@ export default defineConfig({
     user: process.env.POSTGRES_USER!,
     password: process.env.POSTGRES_PASSWORD!,
 
-    /* NOTE: Alternative approach; wasn't working for me */
-    // url: process.env.POSTGRES_DB
+    /* NOTE: Alternative approach */
+    // url: process.env.POSTGRES_URL!,
   },
 });
