@@ -2,7 +2,23 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+### Install project dependencies
+
+```bash
+npm install
+```
+
+### Configure environment variables
+
+Create a .env
+
+```bash
+cp .env-template .env
+```
+
+In the `.env` file, fill in the variables that are need (i.e. db credentials, sendgrid keys, etc)
+
+### Run the development server:
 
 ```bash
 npm run dev
@@ -34,3 +50,20 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Tech Stack
+
+### Database
+
+- PostgreSQL
+- Drizzle ORM
+
+You can use a local database installing postgresql and [dbeaver](https://dbeaver.io/download/) applications
+
+```
+brew install postgresql
+```
+
+Another easier way is to use supabase or render database instances. You can find the env variables in the dashboard for those services.
+
+NOTE: More details [here](drizzle/README.md)
