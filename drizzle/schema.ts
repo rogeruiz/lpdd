@@ -8,7 +8,7 @@ export const OrganizationsTable = lpddSchema.table('organizations', {
   logo_url: text('logo_url'),
   description: text('description'),
   industry: text('industry'),
-  website: text('website').notNull(),
+  website_url: text('website_url').notNull(),
   city: text('city').notNull(),
   region: text('region'),
 });
