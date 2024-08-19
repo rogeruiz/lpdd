@@ -13,14 +13,6 @@ export const OrganizationsTable = lpddSchema.table('organizations', {
   region: text('region'),
 });
 
-export const EventsTable = lpddSchema.table('events', {
-  id: serial('id').primaryKey(),
-  organization_id: integer('organization_id').references(
-    () => OrganizationsTable.id
-  ),
-  event_url: text('event_url'),
-});
-
 export const OrganizationContacts = lpddSchema.table('organization_contacts', {
   id: serial('id').primaryKey(),
   first_name: text('first_name').notNull(),
