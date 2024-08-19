@@ -8,9 +8,17 @@ export const OrganizationsTable = lpddSchema.table('organizations', {
   logo_url: text('logo_url'),
   description: text('description'),
   industry: text('industry'),
-  website_url: text('website_url').notNull(),
+  website: text('website').notNull(),
   city: text('city').notNull(),
   region: text('region'),
+});
+
+export const EventsTable = lpddSchema.table('events', {
+  id: serial('id').primaryKey(),
+  organization_id: integer('organization_id').references(
+    () => OrganizationsTable.id
+  ),
+  event_url: text('event_url'),
 });
 
 export const OrganizationContacts = lpddSchema.table('organization_contacts', {
