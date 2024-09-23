@@ -54,17 +54,15 @@ export default function Filter({
   };
 
   return (
-    <div className="md:w-full relative mt-4 md:mt-0">
+    <div className="relative mt-4 md:mt-0 md:w-full">
       <button
         ref={industryDropdownButtonRef}
         onClick={() => setIsIndustryDropdownOpen(!isIndustryDropdownOpen)}
-        className={`w-full md:w-1/2 flex items-center justify-between px-4 py-2 md:h-12 
-          bg-brandGold hover:shadow-lg
-          transition-all ease-out duration-300 ${
-            isIndustryDropdownOpen
-              ? "rounded-t-lg font-semibold"
-              : "rounded-lg font-normal"
-          } `}
+        className={`bg-brandGold flex w-full items-center justify-between px-4 py-2 transition-all duration-300 ease-out hover:shadow-lg md:h-12 md:w-1/2 ${
+          isIndustryDropdownOpen
+            ? "rounded-t-lg font-semibold"
+            : "rounded-lg font-normal"
+        } `}
       >
         <div className="flex items-center">
           {/* Filter Icon SVG */}
@@ -87,7 +85,7 @@ export default function Filter({
           <span className="ml-2">Filter by Industry</span>
         </div>
         <div
-          className={`ml-2 transition-opacity ease-out duration-300 ${
+          className={`ml-2 transition-opacity duration-300 ease-out ${
             isIndustryDropdownOpen ? "opacity-100" : "opacity-0"
           }`}
         >
@@ -109,7 +107,7 @@ export default function Filter({
       </button>
 
       <div
-        className={`w-full flex flex-wrap gap-2 ${
+        className={`flex w-full flex-wrap gap-2 ${
           selectedIndustries.length === 0 ? "mt-0" : "mt-4"
         } ${isIndustryDropdownOpen ? "hidden" : "block"}`}
       >
@@ -117,8 +115,7 @@ export default function Filter({
           <button
             key={industry}
             onClick={() => removeIndustry(industry)}
-            className="focus:outline-none flex items-center space-x-2 rounded-full px-3 py-1
-            bg-gradient-to-r from-chipGradientFrom via-chipGradientVia to-chipGradientTo"
+            className="from-chipGradientFrom via-chipGradientVia to-chipGradientTo flex items-center space-x-2 rounded-full bg-gradient-to-r px-3 py-1 focus:outline-none"
           >
             <span>{industry}</span>
             {/* X Icon SVG */}
@@ -132,7 +129,7 @@ export default function Filter({
               <path
                 d="M2 2L11 11M20 20L11 11M11 11L20 2M11 11L2 20"
                 stroke="currentColor"
-                stroke-width="4"
+                strokeWidth="4"
               />
             </svg>
           </button>
@@ -141,16 +138,16 @@ export default function Filter({
 
       <div
         ref={industryDropdownRef}
-        className={`absolute w-full md:w-1/2 bg-background transition-all ease-out duration-300 transform ${
+        className={`bg-background absolute w-full transform transition-all duration-300 ease-out md:w-1/2 ${
           isIndustryDropdownOpen
-            ? "opacity-100 translate-y-0 max-h-[500px] p-4 shadow-2xl border-l border-r border-b border-border rounded-b-lg"
-            : "opacity-0 translate-y-0 max-h-0 p-0 shadow-none border-none"
+            ? "border-border max-h-[500px] translate-y-0 rounded-b-lg border-b border-l border-r p-4 opacity-100 shadow-2xl"
+            : "max-h-0 translate-y-0 border-none p-0 opacity-0 shadow-none"
         } overflow-hidden`}
       >
         {industries.map((industry) => (
           <label
             key={industry}
-            className="flex items-center space-x-2 mb-2 cursor-pointer"
+            className="mb-2 flex cursor-pointer items-center space-x-2"
           >
             <input
               type="checkbox"

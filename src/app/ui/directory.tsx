@@ -16,13 +16,9 @@ export default function Directory() {
   );
 
   return (
-    <section className="flex flex-col items-center pt-8 mb-4">
-      <h1 className="text-center pb-8 text-2xl">Directory</h1>
-      <div
-        className="w-10/12 md:w-3/4 shadow-lg rounded-lg bg-background p-4 
-      min-w-[325px] min-h-[760px] md:min-h-[620px] md:min-w-[684px]
-      border border-border dark:shadow-gray-800"
-      >
+    <section className="mb-4 flex flex-col items-center pt-8">
+      <h1 className="pb-8 text-center text-2xl">Directory</h1>
+      <div className="bg-background border-border min-h-[760px] w-10/12 min-w-[325px] rounded-lg border p-4 shadow-lg md:min-h-[620px] md:w-3/4 md:min-w-[684px] dark:shadow-gray-800">
         <div className="mb-6 md:flex md:gap-x-2">
           <Filter
             industries={industries}
