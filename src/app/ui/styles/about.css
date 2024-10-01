@@ -1,69 +1,95 @@
 .about-page {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .team-heading {
-    font-size: 2em;
-    margin-bottom: 20px;
-  }
-  
-  .team-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 350px); /* 3 columns */
-    gap: 20px; /* Space between cards */
-    justify-content: center; /* Center the grid */
-    margin: 0 auto; /* Center the grid on the page */
-  }
-  
-  .team-member-card {
-    width: 350px; /* Fixed width */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center align content */
-  }
-  
-  .team-member-image {
-    width: 350px; /* Fixed width */
-    height: 350px; /* Fixed height */
-    border-radius: 10px; /* Adjust as needed */
-    object-fit: cover; /* Ensures the image covers the area */
-  }
-  
-  .member-info {
-    width: 350px; /* Fixed width */
-    height: 80px; /* Fixed height */
-    background: lightblue; /* Match your design */
-    border-radius: 10px; /* Adjust as needed */
-    display: flex;
-    flex-direction: column; /* Stack name and role vertically */
-    justify-content: center; /* Center content */
-    align-items: center; /* Center text horizontally */
-  }
-  
-  .name-and-linkedin {
-    display: flex; /* Flexbox to align items horizontally */
-    align-items: center; /* Vertically align name and icon */
-  }
-  
-  .name-and-linkedin h3 {
-    margin-right: 10px; /* Add spacing between the name and icon */
-    display: inline; /* Ensure the name remains inline */
-  }
-  
-  .linkedin-svg-icon {
-    width: 24px; /* Adjust the icon size */
-    height: 24px;
-    transition: transform 0.3s ease; /* Add hover effect */
-  }
-  
-  .linkedin-svg-icon:hover {
-    transform: scale(1.2); /* Hover effect */
-  }
-  
-  .role {
-    font-size: 0.9em; /* Adjust the font size for the role */
-    color: #555; /* A slightly lighter color for the role */
-    margin-top: 5px; /* Space between the name and role */
-  }
-  
+  text-align: center;
+  padding: 20px;
+}
+
+.team-heading {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  /* 3 columns */
+  gap: 20px;
+  /* Space between cards */
+  justify-content: center;
+  /* Center the grid */
+  margin: 0 auto;
+  /* Center the grid on the page */
+}
+
+.team-member-card {
+  width: 350px;
+  /* Fixed width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center align content */
+}
+
+.team-member-image {
+  width: 350px;
+  /* Fixed width */
+  height: 350px;
+  /* Fixed height */
+  border-radius: 10px;
+  /* Adjust as needed */
+  object-fit: cover;
+  /* Ensures the image covers the area */
+}
+
+.member-info {
+  width: 350px;
+  /* Fixed width */
+  height: 80px;
+  /* Fixed height */
+  background: lightblue;
+  /* Match your design */
+  border-radius: 10px;
+  /* Adjust as needed */
+  display: flex;
+  flex-direction: column;
+  /* Stack name and role vertically */
+  justify-content: center;
+  /* Center content */
+  align-items: center;
+  /* Center text horizontally */
+}
+
+.name-and-linkedin {
+  display: flex;
+  /* Flexbox to align items horizontally */
+  align-items: center;
+  /* Vertically align name and icon */
+}
+
+.name-and-linkedin h3 {
+  margin-right: 10px;
+  /* Add spacing between the name and icon */
+  display: inline;
+  /* Ensure the name remains inline */
+}
+
+.linkedin-svg-icon {
+  width: 24px;
+  /* Adjust the icon size */
+  height: 24px;
+  transition: transform 0.3s ease;
+  /* Add hover effect */
+}
+
+.linkedin-svg-icon:hover {
+  transform: scale(1.2);
+  /* Hover effect */
+}
+
+.role {
+  font-size: 0.9em;
+  /* Adjust the font size for the role */
+  color: #555;
+  /* A slightly lighter color for the role */
+  margin-top: 5px;
+  /* Space between the name and role */
+}
