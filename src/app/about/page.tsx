@@ -43,9 +43,9 @@ const teamMembers = [
 
 const AboutPage = () => {
   return (
-    <section className="about-page">
-      <h2 className="team-heading">Meet Our Team</h2>
-      <div className="team-grid">
+    <section className="p-5 text-center">
+      <h2 className="mb-5 text-3xl">Meet Our Team</h2>
+      <div className="mx-auto grid w-full justify-center gap-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {teamMembers.map((member, index) => (
           <div key={index} className="team-member-card">
             <img
