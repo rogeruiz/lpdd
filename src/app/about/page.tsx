@@ -1,10 +1,5 @@
-import Image from 'next/image';
+import Image from "next/image";
 import React from "react";
-import '../globals.css';
-
-
-
-
 
 const teamMembers = [
   {
@@ -51,10 +46,7 @@ const AboutPage = () => {
       <h2 className="mb-5 text-3xl">Meet Our Team</h2>
       <div className="mx-auto grid w-full justify-center gap-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {teamMembers.map((member, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center w-80"
-          >
+          <div key={index} className="flex w-80 flex-col items-center">
             <Image
               src={member.image}
               alt={member.name}
@@ -62,14 +54,14 @@ const AboutPage = () => {
               height={350}
               className="rounded-lg"
             />
-            <div className="w-full h-20 bg-lightblue-200 rounded-lg flex flex-col justify-center items-center mt-2">
+            <div className="bg-lightblue-200 mt-2 flex h-20 w-full flex-col items-center justify-center rounded-lg">
               <div className="flex items-center">
                 <h3 className="mr-2">{member.name}</h3>
                 <a
                   href={member.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:scale-110 transition-transform duration-300"
+                  className="transition-transform duration-300 hover:scale-110"
                 >
                   <Image
                     src="/linkedin-icon.svg"
@@ -80,7 +72,7 @@ const AboutPage = () => {
                   />
                 </a>
               </div>
-              <p className="text-gray-500 text-sm">{member.role}</p>
+              <p className="text-sm text-gray-500">{member.role}</p>
             </div>
           </div>
         ))}
@@ -90,7 +82,6 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
-
 
 /*
 import Image from "next/image";
@@ -150,7 +141,7 @@ const AboutPage = () => {
             />
             <div className="member-info">
               {/* Wrapper div for name and LinkedIn icon */
-              /*
+/*
               <div className="name-and-linkedin">
                 <h3>{member.name}</h3>
                 <a

@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
   --foreground-color: #000000;
   --background-start-color: #FFFFFF;
