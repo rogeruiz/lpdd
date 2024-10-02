@@ -58,7 +58,7 @@ export default function Filter({
       <button
         ref={industryDropdownButtonRef}
         onClick={() => setIsIndustryDropdownOpen(!isIndustryDropdownOpen)}
-        className={`bg-brandGold flex w-full items-center justify-between px-4 py-2 transition-all duration-300 ease-out hover:shadow-lg md:h-12 md:w-1/2 ${
+        className={`flex w-full items-center justify-between bg-brandGold px-4 py-2 transition-all duration-300 ease-out hover:shadow-lg md:h-12 md:w-1/2 dark:text-black ${
           isIndustryDropdownOpen
             ? "rounded-t-lg font-semibold"
             : "rounded-lg font-normal"
@@ -72,7 +72,7 @@ export default function Filter({
             viewBox="0 0 40 32"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="text-foreground"
+            className="text-black"
           >
             <path
               d="M2 2L38 5.11111M6 8.22222L34 11.3333M10 14.4444L30 17.5556M14 20.6667L26 23.7778M18 26.8889L22 30"
@@ -115,7 +115,7 @@ export default function Filter({
           <button
             key={industry}
             onClick={() => removeIndustry(industry)}
-            className="from-chipGradientFrom via-chipGradientVia to-chipGradientTo flex items-center space-x-2 rounded-full bg-gradient-to-r px-3 py-1 focus:outline-none"
+            className="flex items-center space-x-2 rounded-full bg-gradient-to-r from-chipGradientFrom via-chipGradientVia to-chipGradientTo px-3 py-1 focus:outline-none"
           >
             <span>{industry}</span>
             {/* X Icon SVG */}
@@ -138,9 +138,9 @@ export default function Filter({
 
       <div
         ref={industryDropdownRef}
-        className={`bg-background absolute w-full transform transition-all duration-300 ease-out md:w-1/2 ${
+        className={`absolute w-full transform bg-background transition-all duration-300 ease-out md:w-1/2 ${
           isIndustryDropdownOpen
-            ? "border-border max-h-[500px] translate-y-0 rounded-b-lg border-b border-l border-r p-4 opacity-100 shadow-2xl"
+            ? "max-h-[500px] translate-y-0 rounded-b-lg border-b border-l border-r border-border p-4 opacity-100 shadow-2xl"
             : "max-h-0 translate-y-0 border-none p-0 opacity-0 shadow-none"
         } overflow-hidden`}
       >
