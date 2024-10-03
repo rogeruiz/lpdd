@@ -42,19 +42,35 @@ const teamMembers = [
 
 const AboutPage = () => {
   return (
-    <section className="mx-auto max-w-screen-lg p-5 text-center">
-      <h2 className="mb-5 text-4xl">Meet Our Team</h2>
-      <div className="mx-auto -mt-5 grid w-full justify-center gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <section className="mx-auto max-w-screen-lg p-5">
+      <div
+        className="absolute inset-0 -z-10 bg-no-repeat"
+        style={{
+          backgroundImage: "url('/background-art1.svg')",
+          backgroundSize: "35%",
+          backgroundPosition: "bottom left",
+        }}
+      />
+      <div
+        className="absolute inset-0 -z-10 bg-no-repeat"
+        style={{
+          backgroundImage: "url('/background-art2.svg')",
+          backgroundSize: "30%",
+          backgroundPosition: "right top",
+        }}
+      />
+      <h2 className="mb-5 text-center text-3xl">Meet Our Team</h2>
+      <div className="mx-auto grid w-full justify-center gap-20 gap-y-0 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {teamMembers.map((member, index) => (
           <div key={index} className="flex w-64 flex-col items-center">
             <Image
               src={member.image}
               alt={member.name}
-              width={300} // Keep width consistent
-              height={300} // Keep height consistent
-              className="rounded-lg"
+              width={500}
+              height={500}
+              className="rounded-lg border-none shadow-lg" // Added shadow for visual effect
             />
-            <div className="bg-lightblue-200 mt-1 flex h-20 w-full flex-col items-center justify-center rounded-lg">
+            <div className="bg-lightblue-200 mt-[-10px] flex h-20 w-full flex-col items-center justify-center rounded-lg">
               <div className="flex w-full items-center justify-between px-2">
                 <h3 className="overflow-hidden whitespace-nowrap text-right">
                   {member.name}
@@ -63,19 +79,20 @@ const AboutPage = () => {
                   href={member.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="ml-2 transition-transform duration-300 hover:scale-110"
+                  className="ml-2 mt-[-10px] transition-transform duration-300 hover:scale-110"
                 >
                   <Image
                     src="/linkedin-icon.svg"
                     alt="LinkedIn"
-                    width={20} // Keep icon size consistent
-                    height={20} // Keep icon size consistent
+                    width={20}
+                    height={20}
                     className="transition-transform duration-300"
                   />
                 </a>
               </div>
-              <p className="mb-0 mt-1 text-left text-gray-500">{member.role}</p>{" "}
-              {/* Aligning role text to left */}
+              <p className="mb-0 ml-[-100px] text-left text-gray-500">
+                {member.role}
+              </p>
             </div>
           </div>
         ))}
