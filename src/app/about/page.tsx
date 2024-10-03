@@ -68,7 +68,7 @@ const AboutPage = () => {
               alt={member.name}
               width={500}
               height={500}
-              className="rounded-lg border-none shadow-lg" // Added shadow for visual effect
+              className="rounded-lg border-none shadow-lg"
             />
             <div className="bg-lightblue-200 mt-[-10px] flex h-20 w-full flex-col items-center justify-center rounded-lg">
               <div className="flex w-full items-center justify-between px-2">
