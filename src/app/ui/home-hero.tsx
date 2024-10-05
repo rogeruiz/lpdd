@@ -25,7 +25,7 @@ export default function HomeHero() {
           alt="Group of people listening to a panel discussion with panelists seated on stage."
         />
       </div>
-      <div className="absolute bottom-[15%] left-[5%] flex flex-col-reverse sm:flex-col mr-[5%]">
+      <div className="absolute bottom-[15%] left-[5%] flex flex-col-reverse md:flex-col mr-[5%]">
         <h1
           className={`${lexendMedium.className} text-[13px] text-white md:text-3xl`}
         >
