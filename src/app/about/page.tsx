@@ -82,7 +82,7 @@ const AboutPage = () => {
                   className="ml-2 mt-[-10px] transition-transform duration-300 hover:scale-110"
                 >
                   <Image
-                    src="/linkedin-icon.svg"
+                    src="/linkedin.svg"
                     alt="LinkedIn"
                     width={20}
                     height={20}
