@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={lexend.className}>
+      <body className={`${lexend.className} min-w-[315px]`}>
         <NavBar />
         {children}
       </body>

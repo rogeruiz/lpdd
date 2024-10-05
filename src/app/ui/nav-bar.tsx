@@ -10,7 +10,7 @@ export default function NavBar() {
   const pathname = usePathname();
 
   const navClasses = clsx(
-    "w-full h-14 flex items-center justify-between px-2 bg-slate-900",
+    "w-full min-w-[315px] h-12 sm:h-14 flex items-center justify-between px-2 bg-slate-900",
     pathname === '/' && "absolute z-10 sm:bg-transparent"
   );
 
