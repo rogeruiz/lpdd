@@ -21,7 +21,7 @@ export default function HomeHero() {
           priority={true}
           width={2048}
           height={1365}
-          className="h-full w-full object-cover opacity-60 lg:object-[30%_60%]"
+          className="h-full w-full object-cover opacity-60 md:object-[30%_60%]"
           alt="Group of people listening to a panel discussion with panelists seated on stage."
         />
       </div>
