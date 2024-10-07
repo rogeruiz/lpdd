@@ -14,7 +14,7 @@ const lexendMedium = Lexend({
 
 export default function HomeHero() {
   return (
-    <section className="relative h-[25vh] min-h-[150px] w-full bg-black md:h-[50vh] md:min-h-[425px]">
+    <section className="relative h-[25vh] min-h-[250px] w-full bg-black md:h-[50vh] md:min-h-[425px]">
       <div className="h-full w-full">
         <Image
           src="/hero.jpg"
