@@ -37,9 +37,7 @@ export default function NavLinks() {
         return (
           <Link key={name} href={href}>
             <p
-              className={`text-sm pr-2 tracking-tighter sm:pl-8 sm:tracking-normal
-                transition ease-in-out duration-300
-                ${clsx(isActiveLink ? activeClasses : inactiveClasses)}`}
+              className={`pr-2 text-sm tracking-tighter transition duration-300 ease-in-out md:pl-8 md:tracking-normal ${clsx(isActiveLink ? activeClasses : inactiveClasses)}`}
             >
               {name}
             </p>
