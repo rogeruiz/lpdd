@@ -9,7 +9,7 @@ const lexend = Lexend({
 export default function IntroSection() {
   return (
     <section
-      className={`flex w-full flex-col items-center pt-8 text-center sm:pt-10 ${lexend.className}`}
+      className={`flex w-full flex-col items-center pt-8 text-center md:pt-10 ${lexend.className}`}
     >
       <p className="mx-6 text-xs font-medium text-gray-600 sm:text-2xl dark:text-gray-400">
         We strive to provide a comprehensive and updated list of organizations
