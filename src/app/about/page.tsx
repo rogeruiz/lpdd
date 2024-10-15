@@ -5,37 +5,37 @@ const teamMembers = [
   {
     name: "Jorge Viramontes",
     role: "Role not specified",
-    image: "/team-headshots/jorge-headshot.jpg",
+    image: "/team-headshots/jorge.jpg",
     linkedin: "https://www.linkedin.com/in/jorgealbertoviramontes/",
   },
   {
     name: "Gerardo Rodriguez",
     role: "Role not specified",
-    image: "/team-headshots/gerardo-headshot.jpg",
+    image: "/team-headshots/gerardo.jpg",
     linkedin: "https://www.linkedin.com/in/geraxrodriguez/",
   },
   {
     name: "Natasha Koller",
     role: "Role not specified",
-    image: "/team-headshots/natasha-headshot.jpg",
+    image: "/team-headshots/natasha.jpg",
     linkedin: "https://www.linkedin.com",
   },
   {
     name: "Niza Cuéllar",
     role: "Role not specified",
-    image: "/team-headshots/niza-headshot.jpg",
+    image: "/team-headshots/niza.jpg",
     linkedin: "https://www.linkedin.com/in/niza-cuellar-0a8234188/",
   },
   {
     name: "Mario Galeno",
     role: "Role not specified",
-    image: "/team-headshots/mario-headshot.jpg",
+    image: "/team-headshots/mario.jpg",
     linkedin: "https://www.linkedin.com",
   },
   {
     name: "Francisco Gonzalez",
     role: "Role not specified",
-    image: "/team-headshots/francisco-headshot.jpg",
+    image: "/team-headshots/francisco.jpg",
     linkedin: "https://www.linkedin.com/in/francisco-gonzalez-0906/",
   },
 ];
