@@ -42,7 +42,7 @@ const teamMembers = [
 
 const AboutPage = () => {
   return (
-    <section className="mx-auto max-w-screen-lg p-5">
+    <section className="p-5">
       <div
         className="absolute inset-0 -z-10 bg-no-repeat"
         style={{
@@ -60,9 +60,9 @@ const AboutPage = () => {
         }}
       />
       <h2 className="mb-5 text-center text-3xl">Meet Our Team</h2>
-      <div className="mx-auto grid w-full justify-center gap-20 gap-y-0 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-20 gap-y-0 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {teamMembers.map((member, index) => (
-          <div key={index} className="flex w-64 flex-col items-center">
+          <div key={index} className="flex w-64 flex-col">
             <Image
               src={member.image}
               alt={member.name}
@@ -70,11 +70,9 @@ const AboutPage = () => {
               height={350}
               className="rounded-lg"
             />
-            <div className="bg-lightblue-200 mt-[-10px] flex w-full flex-col items-center justify-center rounded-lg px-2 py-3">
-              <div className="flex w-full items-center justify-between">
-                <h3 className="overflow-hidden text-ellipsis text-left">
-                  {member.name}
-                </h3>
+            <div className="flex flex-col items-start px-2 py-3">
+              <div className="flex justify-between">
+                <h3 className="overflow-hidden text-ellipsis">{member.name}</h3>
                 <a
                   href={member.linkedin}
                   target="_blank"
