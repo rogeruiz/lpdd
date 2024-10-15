@@ -66,20 +66,20 @@ const AboutPage = () => {
             <Image
               src={member.image}
               alt={member.name}
-              width={500}
-              height={500}
-              className="rounded-lg border-none shadow-lg"
+              width={350}
+              height={350}
+              className="rounded-lg"
             />
-            <div className="bg-lightblue-200 mt-[-10px] flex h-20 w-full flex-col items-center justify-center rounded-lg">
-              <div className="flex w-full items-center justify-between px-2">
-                <h3 className="overflow-hidden whitespace-nowrap text-right">
+            <div className="bg-lightblue-200 mt-[-10px] flex w-full flex-col items-center justify-center rounded-lg px-2 py-3">
+              <div className="flex w-full items-center justify-between">
+                <h3 className="overflow-hidden text-ellipsis text-left">
                   {member.name}
                 </h3>
                 <a
                   href={member.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="ml-2 mt-[-10px] transition-transform duration-300 hover:scale-110"
+                  className="ml-1 transition-transform duration-300 hover:scale-110"
                 >
                   <Image
                     src="/linkedin.svg"
@@ -90,9 +90,7 @@ const AboutPage = () => {
                   />
                 </a>
               </div>
-              <p className="mb-0 ml-[-100px] text-left text-gray-500">
-                {member.role}
-              </p>
+              <p className="text-left text-gray-500">{member.role}</p>
             </div>
           </div>
         ))}
