@@ -90,7 +90,7 @@ const AboutPage = () => {
                   />
                 </a>
               </div>
-              <p className="text-left text-gray-500">{member.role}</p>
+              <p className="text-secondary">{member.role}</p>
             </div>
           </div>
         ))}
