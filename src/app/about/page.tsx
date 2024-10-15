@@ -4,37 +4,37 @@ import React from "react";
 const teamMembers = [
   {
     name: "Jorge Viramontes",
-    role: "Role not specified",
+    role: "Project Manager / Tech Lead",
     image: "/team-headshots/jorge.jpg",
     linkedin: "https://www.linkedin.com/in/jorgealbertoviramontes/",
   },
   {
     name: "Gerardo Rodriguez",
-    role: "Role not specified",
+    role: "Software Engineer",
     image: "/team-headshots/gerardo.jpg",
     linkedin: "https://www.linkedin.com/in/geraxrodriguez/",
   },
   {
     name: "Natasha Koller",
-    role: "Role not specified",
+    role: "Graphic Designer",
     image: "/team-headshots/natasha.jpg",
     linkedin: "https://www.linkedin.com",
   },
   {
     name: "Niza Cuéllar",
-    role: "Role not specified",
+    role: "Graphic Designer",
     image: "/team-headshots/niza.jpg",
     linkedin: "https://www.linkedin.com/in/niza-cuellar-0a8234188/",
   },
   {
     name: "Mario Galeno",
-    role: "Role not specified",
+    role: "Software Architect",
     image: "/team-headshots/mario.jpg",
     linkedin: "https://www.linkedin.com",
   },
   {
     name: "Francisco Gonzalez",
-    role: "Role not specified",
+    role: "Software Engineer",
     image: "/team-headshots/francisco.jpg",
     linkedin: "https://www.linkedin.com/in/francisco-gonzalez-0906/",
   },
