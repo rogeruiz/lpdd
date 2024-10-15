@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import LinkedInIcon from "../ui/common/LinkedInIcon";
 
 const teamMembers = [
   {
@@ -71,21 +72,15 @@ const AboutPage = () => {
               className="rounded-lg"
             />
             <div className="flex flex-col items-start px-2 py-3">
-              <div className="flex justify-between">
+              <div className="flex w-full justify-between">
                 <h3 className="overflow-hidden text-ellipsis">{member.name}</h3>
                 <a
                   href={member.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="ml-1 transition-transform duration-300 hover:scale-110"
+                  className="transition-transform duration-500 hover:scale-110"
                 >
-                  <Image
-                    src="/linkedin.svg"
-                    alt="LinkedIn"
-                    width={20}
-                    height={20}
-                    className="transition-transform duration-300"
-                  />
+                  <LinkedInIcon />
                 </a>
               </div>
               <p className="text-secondary">{member.role}</p>
